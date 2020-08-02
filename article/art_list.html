@@ -72,9 +72,9 @@
     {{each data}}
     <tr>
       <td>{{$value.title}}</td>
+      <td>{{$value.cate_name}}</td>
       <td>{{$value.pub_date | dataFormat}}</td>
       <td>{{$value.state}}</td>
-      <td>{{$value.cate_name}}</td>
       <td>
         <button type="button" class="layui-btn layui-btn-xs btn-edit"  data-id="{{$value.Id}}">编辑</button>
         <button type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-del" data-id="{{$value.Id}}"

@@ -49,6 +49,9 @@ $(function () {
     // console.log($(this)[0]);
     // 1 创建一个formdata对象
     var fd = new FormData(this);
+    fd.forEach(function (v, k) {
+      console.log(v,k);
+    })
     // 2 将文章状态添加到formdata中
     fd.append('state', state);
     // 3. 将封面裁剪过后的图片，输出为一个文件对象
